@@ -18,33 +18,12 @@ fi
 #
 # apt install brave-browser
 
-# Add the bitwarden and json formatter extensions for brave
+# Add the bitwarden, atsistemas benefits  and json formatter extensions for brave
 #
 # #Installation git
 # apt install git
 #
 #Vi mode configuration in kate
-#
-#Customization
-# https://www.youtube.com/watch?v=zfOe1Kfb4WE
-
-#No funciona
-# git clone https://github.com/esjeon/kwin-forceblur
-# ./kwin-forceblur/install.sh
-######
-
-# cp -r /media/critian/Data/OrdenadorFormateo/kdeSetupFiles/wallpapers/ /home/critian/Pictures/
-
-# git clone https://github.com/vinceliuice/Orchis-kde.git
-# ./Orchis-kde/install.sh
-# rm -r ./Orchis-kde
-#
-# git clone https://github.com/vinceliuice/Orchis-theme.git
-# ./Orchis-theme/install.sh
-# rm -r ./Orchis-theme
-
-# apt-get install gtk2-engines-murrine
-
 
 #VS Code
 # sudo apt-get install wget gpg
@@ -60,3 +39,57 @@ fi
 # wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 # sudo apt install ./gitkraken-amd64.deb
 # sudo rm -r ./gitkraken-amd64.deb
+
+#Ranger
+# sudo apt install python3-pip
+# pip install setuptools
+# git clone https://github.com/hut/ranger.git
+# cd ranger
+# sudo apt-get install make git vim -y
+# sudo make install
+# sudo rm -r /home/critian/.config/ranger
+# cp -r ./ranger /home/critian/.config/
+# chmod 777 /home/critian/.config/ranger
+
+#Fish
+# sudo apt-add-repository ppa:fish-shell/release-3
+# sudo apt-get install fish
+# cp -r ./fish/config.fish /home/critian/.config/fish/
+# cp -r ./fish/functions/ranger-cd.fish /home/critian/.config/fish/functions
+# curl -sS https://starship.rs/install.sh | sh
+
+
+#Customization
+# https://www.youtube.com/watch?v=zfOe1Kfb4WE
+
+#No funciona
+# git clone https://github.com/esjeon/kwin-forceblur
+# ./kwin-forceblur/install.sh
+######
+
+# cp -r /media/critian/Data/OrdenadorFormateo/kdeSetupFiles/wallpapers/ /home/critian/Pictures/
+
+# git clone https://github.com/vinceliuice/Orchis-kde.git
+# ./Orchis-kde/install.sh
+# rm -r ./Orchis-kde
+#
+# apt-get install gtk2-engines-murrine
+
+# git clone https://github.com/vinceliuice/Orchis-theme.git
+# ./Orchis-theme/install.sh
+# rm -r ./Orchis-theme
+
+# git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git
+# ./Tela-circle-icon-theme/install.sh -a 
+# rm -r ./Tela-circle-icon-theme
+
+# git clone https://github.com/vinceliuice/Vimix-cursors.git
+# cd Vimix-cursors/
+# ./install.sh
+# cd ..
+# rm -r ./Vimix-cursors/
+
+#settings->Apareance->Global Theme->Orchis-dark
+#icons->tela circle blue dark
+#Cursors->vimix cursors
+
