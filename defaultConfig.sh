@@ -124,3 +124,9 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
 
 # Atuin: do not run this as root, root will be asked for if required
 bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
+bash (curl --proto '=https' --tlsv1.2 -sSf https://setup.atuin.sh | psub)
+
+atuin register -u <USERNAME> -e <EMAIL>
+atuin import auto
+atuin sync
+#Add this to config.fish -> atuin init fish | source
