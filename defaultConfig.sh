@@ -130,3 +130,10 @@ atuin register -u <USERNAME> -e <EMAIL>
 atuin import auto
 atuin sync
 #Add this to config.fish -> atuin init fish | source
+
+sudo apt install nodejs npm
+
+sudo apt install net-tools
+# For ssh connections
+sudo apt-get install openssh-server
+
