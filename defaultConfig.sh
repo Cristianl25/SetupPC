@@ -118,3 +118,9 @@ sudo apt-get install onlyoffice-desktopeditors
 test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
 test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bashrc
+
+ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+ ~/.fzf/install
+
+# Atuin: do not run this as root, root will be asked for if required
+bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
